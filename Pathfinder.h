@@ -2,7 +2,6 @@
 
 class Pathfinder : public PathfinderInterface {//i just copied what was in "PathfinderInterface.h" and removed "virtual"
 public:
-	Pathfinder();
 	~Pathfinder();
 
 	//Part 1-----------------------------------------------------------------------------------
@@ -25,7 +24,7 @@ public:
 	* Returns:		string
 	*				A single string representing the current maze
 	*/
-	string toString() const = 0;
+	string toString() const ;
 
 	/*
 	* createRandomMaze
@@ -36,7 +35,7 @@ public:
 	* in the entrance cell (0, 0, 0) and in the exit cell (4, 4, 4).  The generated maze may be
 	* solvable or unsolvable, and this method should be able to produce both kinds of mazes.
 	*/
-	void createRandomMaze() = 0;
+	void createRandomMaze();
 	//-----------------------------------------------------------------------------------------
 
 	//Part 2-----------------------------------------------------------------------------------
@@ -54,7 +53,7 @@ public:
 	* Returns:		bool
 	*				True if the maze is imported correctly; false otherwise
 	*/
-	bool importMaze(string file_name) = 0;
+	bool importMaze(string file_name);
 	//-----------------------------------------------------------------------------------------
 
 	//Part 3-----------------------------------------------------------------------------------
@@ -75,8 +74,8 @@ public:
 	* Returns:		vector<string>
 	*				A solution to the current maze, or an empty vector if none exists
 	*/
-	vector<string> solveMaze() = 0;
+	vector<string> solveMaze();
 	//-----------------------------------------------------------------------------------------
 private:
 
-};
+}; 
