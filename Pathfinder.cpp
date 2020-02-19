@@ -7,9 +7,31 @@
 //Part 1
 
 string Pathfinder::toString() {
-	string endString = "";
+        string endString = "";
 
-	return endString;
+    //    for (int i = 0; i < ArrayZ; i++){
+    //        for (int j = 0; j < ArrayY; j++){
+    //            for (int k = 0; k < ArrayX; k++){
+    //                cout << maze[k][j][i];
+    //            }
+    //            cout << endl;
+    //        }
+    //        cout << endl << endl;
+    //    }
+
+        for (int i = 0; i < ArrayZ; i++){
+            for (int j = 0; j < ArrayY; j++){
+                for (int k = 0; k < ArrayX; k++){
+                    int value = maze[k][j][i];
+                    endString += value;
+                }
+                endString.push_back('\n');
+            }
+            endString.push_back('\n');
+            endString.push_back('\n');
+        }
+    //    cout << endString;
+        return endString;
 }
 
 void Pathfinder::createRandomMaze() {
