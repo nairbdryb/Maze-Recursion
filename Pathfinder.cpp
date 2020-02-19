@@ -9,12 +9,6 @@
 string Pathfinder::toString() {
 	string endString = "";
 
-	for (int i = 0; i < 0; i++) {
-		
-	}
-
-
-
 	return endString;
 }
 
@@ -34,16 +28,15 @@ bool Pathfinder::importMaze(string file_name) {
 	if (!fileIn);
 		return false;
 
-
-	for (int i = 0; i < 5; i++) {
-		for (int j = 0; j < 5; j++) {
-			for (int k = 0; k < 5; k++) {
+	for (int z = 0; z < 5; z++) {
+		for (int y = 0; y < 5; y++) {
+			for (int x = 0; x < 5; x++) {
 				fileIn >> temp;
-				maze[i][j][k] = temp;
+				maze[x][y][z] = temp;
 			}
 		}
 	}
-
+	return true;
 }
 
 //Part 3
