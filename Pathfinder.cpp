@@ -9,7 +9,16 @@ Pathfinder::Pathfinder() {
 //Part 1
 
 string toString() {
-	return "";
+	string endString = "";
+	ifstream fileIn;
+
+	for (int i = 0; i < 0; i++) {
+
+	}
+
+
+
+	return endString;
 }
 
 void createRandomMaze() {
@@ -19,7 +28,7 @@ void createRandomMaze() {
 //Part 2
 
 bool importMaze(string file_name) {
-
+	
 }
 
 //Part 3

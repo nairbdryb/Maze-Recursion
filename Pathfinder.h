@@ -1,4 +1,5 @@
 #include "PathfinderInterface.h"
+#include <fstream>
 
 class Pathfinder : public PathfinderInterface {//i just copied what was in "PathfinderInterface.h" and removed "virtual"
 public:
@@ -77,5 +78,5 @@ public:
 	vector<string> solveMaze();
 	//-----------------------------------------------------------------------------------------
 private:
-
+	vector<vector<vector<string>>> maze;
 }; 
