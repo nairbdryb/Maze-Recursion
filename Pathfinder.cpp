@@ -2,13 +2,11 @@
 
 //Constructor
 
-/*Pathfinder::Pathfinder() {
-	//yon constructifyer
-}*/
+
 
 //Part 1
 
-string toString() {
+string Pathfinder::toString() {
 	string endString = "";
 
 	for (int i = 0; i < 0; i++) {
@@ -20,13 +18,13 @@ string toString() {
 	return endString;
 }
 
-void createRandomMaze() {
+void Pathfinder::createRandomMaze() {
 
 }
 
 //Part 2
 
-bool importMaze(string file_name) {
+bool Pathfinder::importMaze(string file_name) {
 	ifstream fileIn;
 	ofstream fileOut;
 	int temp = 0;
@@ -50,6 +48,6 @@ bool importMaze(string file_name) {
 
 //Part 3
 
-vector<string> solveMaze() {
+vector<string> Pathfinder::solveMaze() {
 
 }

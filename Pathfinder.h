@@ -27,7 +27,7 @@ public:
 	* Returns:		string
 	*				A single string representing the current maze
 	*/
-	string toString() const ;
+	string toString();
 
 	/*
 	* createRandomMaze
