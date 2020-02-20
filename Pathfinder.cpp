@@ -26,6 +26,7 @@ string Pathfinder::toString() const {
                 for (int k = 0; k < ARRAY_X; k++){
                     int value = maze[i][j][k];
                     endString << value;
+					endString << " ";
                 }
                 endString << '\n';
             }
