@@ -52,7 +52,7 @@ void Pathfinder::createRandomMaze() {
 		for (int y = 0; y < 5; y++) {
 			for (int x = 0; x < 5; x++) {
 				temp = rand() % 2;
-				maze[x][y][z] = temp;
+				maze[z][y][x] = temp;
 			}
 		}
 	}
@@ -80,7 +80,7 @@ bool Pathfinder::importMaze(string file_name) {
 					return false;
 				}
 				fileIn >> temp;
-				maze[x][y][z] = temp;
+				maze[z][y][x] = temp;
 			}
 		}
 	}
