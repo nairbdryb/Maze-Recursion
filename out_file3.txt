@@ -6,20 +6,17 @@ toString
 1 0 0 0 0 
 1 1 1 1 1 
 
-
 1 1 1 0 0 
 0 0 1 0 0 
 1 0 1 0 0 
 0 0 0 0 0 
 0 0 0 0 1 
 
-
 0 0 0 0 0 
 0 0 0 0 0 
 1 0 1 0 0 
 0 0 0 0 0 
 0 0 0 0 1 
-
 
 1 1 1 1 1 
 1 0 0 0 1 
@@ -27,14 +24,11 @@ toString
 0 0 0 0 0 
 0 0 0 0 1 
 
-
 0 0 0 0 0 
 0 0 0 0 0 
 0 0 0 0 0 
 0 0 0 0 0 
 0 0 0 0 1 
-
-
 
 solveMaze
 INVALID solution. Maze has been altered from: 
@@ -44,20 +38,17 @@ INVALID solution. Maze has been altered from:
 1 0 0 0 0 
 1 1 1 1 1 
 
-
 1 1 1 0 0 
 0 0 1 0 0 
 1 0 1 0 0 
 0 0 0 0 0 
 0 0 0 0 1 
 
-
 0 0 0 0 0 
 0 0 0 0 0 
 1 0 1 0 0 
 0 0 0 0 0 
 0 0 0 0 1 
-
 
 1 1 1 1 1 
 1 0 0 0 1 
@@ -65,14 +56,11 @@ INVALID solution. Maze has been altered from:
 0 0 0 0 0 
 0 0 0 0 1 
 
-
 0 0 0 0 0 
 0 0 0 0 0 
 0 0 0 0 0 
 0 0 0 0 0 
 0 0 0 0 1 
-
-
 
 ...to: 
 
@@ -82,20 +70,17 @@ INVALID solution. Maze has been altered from:
 1 0 0 0 0 
 1 1 1 1 1 
 
-
 2 2 2 0 0 
 0 0 2 0 0 
 1 0 2 0 0 
 0 0 0 0 0 
 0 0 0 0 1 
 
-
 0 0 0 0 0 
 0 0 0 0 0 
 1 0 2 0 0 
 0 0 0 0 0 
 0 0 0 0 1 
-
 
 1 1 1 1 1 
 1 0 0 0 1 
@@ -103,14 +88,11 @@ INVALID solution. Maze has been altered from:
 0 0 0 0 0 
 0 0 0 0 1 
 
-
 0 0 0 0 0 
 0 0 0 0 0 
 0 0 0 0 0 
 0 0 0 0 0 
 0 0 0 0 1 
-
-
 
 importMaze Mazes/Solvable2.txt True
 toString
@@ -120,13 +102,11 @@ toString
 0 1 0 0 0 
 0 0 0 0 0 
 
-
 0 0 1 1 0 
 1 0 1 1 0 
 1 0 0 1 1 
 1 0 0 0 1 
 0 0 1 1 1 
-
 
 1 1 0 1 1 
 1 1 0 0 0 
@@ -134,21 +114,17 @@ toString
 1 0 0 1 1 
 0 1 1 0 1 
 
-
 1 0 0 1 1 
 1 0 0 1 0 
 0 0 0 1 0 
 0 1 1 0 1 
 0 1 0 1 1 
 
-
 1 0 0 0 0 
 0 0 1 1 0 
 1 1 0 1 1 
 0 1 1 0 0 
 1 1 0 1 1 
-
-
 
 solveMaze
 INVALID solution. Maze has been altered from: 
@@ -158,13 +134,11 @@ INVALID solution. Maze has been altered from:
 0 1 0 0 0 
 0 0 0 0 0 
 
-
 0 0 1 1 0 
 1 0 1 1 0 
 1 0 0 1 1 
 1 0 0 0 1 
 0 0 1 1 1 
-
 
 1 1 0 1 1 
 1 1 0 0 0 
@@ -172,21 +146,17 @@ INVALID solution. Maze has been altered from:
 1 0 0 1 1 
 0 1 1 0 1 
 
-
 1 0 0 1 1 
 1 0 0 1 0 
 0 0 0 1 0 
 0 1 1 0 1 
 0 1 0 1 1 
 
-
 1 0 0 0 0 
 0 0 1 1 0 
 1 1 0 1 1 
 0 1 1 0 0 
 1 1 0 1 1 
-
-
 
 ...to: 
 
@@ -196,13 +166,11 @@ INVALID solution. Maze has been altered from:
 0 1 0 0 0 
 0 0 0 0 0 
 
-
 0 0 2 2 0 
 1 0 2 2 0 
 1 0 0 2 1 
 1 0 0 0 1 
 0 0 1 1 1 
-
 
 1 1 0 1 1 
 1 1 0 0 0 
@@ -210,21 +178,17 @@ INVALID solution. Maze has been altered from:
 1 0 0 1 1 
 0 1 1 0 1 
 
-
 1 0 0 1 1 
 1 0 0 1 0 
 0 0 0 1 0 
 0 1 1 0 1 
 0 1 0 1 1 
 
-
 1 0 0 0 0 
 0 0 1 1 0 
 1 1 0 1 1 
 0 1 1 0 0 
 1 1 0 1 1 
-
-
 
 importMaze Mazes/Solvable3.txt True
 toString
@@ -234,6 +198,17 @@ toString
 1 1 1 1 1 
 1 1 1 1 1 
 
+1 1 1 1 1 
+1 1 1 1 1 
+1 1 1 1 1 
+1 1 1 1 1 
+1 1 1 1 1 
+
+1 1 1 1 1 
+1 1 1 1 1 
+1 1 1 1 1 
+1 1 1 1 1 
+1 1 1 1 1 
 
 1 1 1 1 1 
 1 1 1 1 1 
@@ -241,28 +216,11 @@ toString
 1 1 1 1 1 
 1 1 1 1 1 
 
-
 1 1 1 1 1 
 1 1 1 1 1 
 1 1 1 1 1 
 1 1 1 1 1 
 1 1 1 1 1 
-
-
-1 1 1 1 1 
-1 1 1 1 1 
-1 1 1 1 1 
-1 1 1 1 1 
-1 1 1 1 1 
-
-
-1 1 1 1 1 
-1 1 1 1 1 
-1 1 1 1 1 
-1 1 1 1 1 
-1 1 1 1 1 
-
-
 
 solveMaze
 INVALID solution. Maze has been altered from: 
@@ -272,6 +230,17 @@ INVALID solution. Maze has been altered from:
 1 1 1 1 1 
 1 1 1 1 1 
 
+1 1 1 1 1 
+1 1 1 1 1 
+1 1 1 1 1 
+1 1 1 1 1 
+1 1 1 1 1 
+
+1 1 1 1 1 
+1 1 1 1 1 
+1 1 1 1 1 
+1 1 1 1 1 
+1 1 1 1 1 
 
 1 1 1 1 1 
 1 1 1 1 1 
@@ -279,28 +248,11 @@ INVALID solution. Maze has been altered from:
 1 1 1 1 1 
 1 1 1 1 1 
 
-
 1 1 1 1 1 
 1 1 1 1 1 
 1 1 1 1 1 
 1 1 1 1 1 
 1 1 1 1 1 
-
-
-1 1 1 1 1 
-1 1 1 1 1 
-1 1 1 1 1 
-1 1 1 1 1 
-1 1 1 1 1 
-
-
-1 1 1 1 1 
-1 1 1 1 1 
-1 1 1 1 1 
-1 1 1 1 1 
-1 1 1 1 1 
-
-
 
 ...to: 
 
@@ -310,6 +262,17 @@ INVALID solution. Maze has been altered from:
 1 1 1 1 1 
 1 1 1 1 1 
 
+1 1 1 1 1 
+1 1 1 1 1 
+1 1 1 1 1 
+1 1 1 1 1 
+1 1 1 1 1 
+
+1 1 1 1 1 
+1 1 1 1 1 
+1 1 1 1 1 
+1 1 1 1 1 
+1 1 1 1 1 
 
 1 1 1 1 1 
 1 1 1 1 1 
@@ -317,26 +280,9 @@ INVALID solution. Maze has been altered from:
 1 1 1 1 1 
 1 1 1 1 1 
 
-
 1 1 1 1 1 
 1 1 1 1 1 
 1 1 1 1 1 
 1 1 1 1 1 
 1 1 1 1 1 
-
-
-1 1 1 1 1 
-1 1 1 1 1 
-1 1 1 1 1 
-1 1 1 1 1 
-1 1 1 1 1 
-
-
-1 1 1 1 1 
-1 1 1 1 1 
-1 1 1 1 1 
-1 1 1 1 1 
-1 1 1 1 1 
-
-
 

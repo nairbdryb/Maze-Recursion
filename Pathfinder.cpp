@@ -30,12 +30,17 @@ string Pathfinder::toString() const {
                 }
                 endString << '\n';
             }
-            endString << '\n';
-            endString << '\n';
+			if (i != ARRAY_Z - 1) {
+				endString << '\n';
+			}
+//            endString << '\n';
         }
     //    cout << endString;
-		string temp = "";
-		endString >> temp;
+//		string temp = "";
+//		endString >> temp;
+//		endString.str().erase(endString.str().end());
+//		endString.unget();
+
         return endString.str();
 }
 

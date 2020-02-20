@@ -7,20 +7,17 @@ INVALID solution. Maze has been altered from:
 1 0 0 0 0 
 1 1 1 1 1 
 
-
 1 1 1 0 0 
 0 0 1 0 0 
 1 0 1 0 0 
 0 0 0 0 0 
 0 0 0 0 1 
 
-
 0 0 0 0 0 
 0 0 0 0 0 
 1 0 1 0 0 
 0 0 0 0 0 
 0 0 0 0 1 
-
 
 1 1 1 1 1 
 1 0 0 0 1 
@@ -28,14 +25,11 @@ INVALID solution. Maze has been altered from:
 0 0 0 0 0 
 0 0 0 0 0 
 
-
 0 0 0 0 0 
 0 0 0 0 0 
 0 0 0 0 0 
 0 0 0 0 0 
 0 0 0 0 1 
-
-
 
 ...to: 
 
@@ -45,20 +39,17 @@ INVALID solution. Maze has been altered from:
 1 0 0 0 0 
 1 1 1 1 1 
 
-
 2 2 2 0 0 
 0 0 2 0 0 
 1 0 2 0 0 
 0 0 0 0 0 
 0 0 0 0 1 
 
-
 0 0 0 0 0 
 0 0 0 0 0 
 1 0 2 0 0 
 0 0 0 0 0 
 0 0 0 0 1 
-
 
 1 1 1 1 1 
 1 0 0 0 1 
@@ -66,14 +57,11 @@ INVALID solution. Maze has been altered from:
 0 0 0 0 0 
 0 0 0 0 0 
 
-
 0 0 0 0 0 
 0 0 0 0 0 
 0 0 0 0 0 
 0 0 0 0 0 
 0 0 0 0 1 
-
-
 
 importMaze Mazes/Unsolvable2.txt True
 solveMaze
@@ -84,13 +72,11 @@ INVALID solution. Maze has been altered from:
 0 1 0 0 0 
 0 0 0 0 0 
 
-
 0 0 1 1 0 
 1 0 1 1 0 
 1 0 0 1 1 
 1 0 0 0 1 
 0 0 1 1 1 
-
 
 1 1 0 1 1 
 1 1 0 0 0 
@@ -98,21 +84,17 @@ INVALID solution. Maze has been altered from:
 1 0 0 1 1 
 0 1 1 0 1 
 
-
 1 0 0 1 1 
 1 0 0 1 0 
 0 0 0 1 0 
 0 1 1 0 1 
 0 1 0 1 0 
 
-
 1 0 0 0 0 
 0 0 1 1 0 
 1 1 0 1 1 
 0 1 1 0 0 
 1 1 0 1 1 
-
-
 
 ...to: 
 
@@ -122,13 +104,11 @@ INVALID solution. Maze has been altered from:
 0 1 0 0 0 
 0 0 0 0 0 
 
-
 0 0 2 2 0 
 1 0 2 2 0 
 1 0 0 2 1 
 1 0 0 0 1 
 0 0 1 1 1 
-
 
 1 1 0 1 1 
 1 1 0 0 0 
@@ -136,21 +116,17 @@ INVALID solution. Maze has been altered from:
 1 0 0 1 1 
 0 1 1 0 1 
 
-
 1 0 0 1 1 
 1 0 0 1 0 
 0 0 0 1 0 
 0 1 1 0 1 
 0 1 0 1 0 
 
-
 1 0 0 0 0 
 0 0 1 1 0 
 1 1 0 1 1 
 0 1 1 0 0 
 1 1 0 1 1 
-
-
 
 importMaze Mazes/Unsolvable3.txt True
 solveMaze
@@ -161,35 +137,29 @@ INVALID solution. Maze has been altered from:
 1 1 1 1 1 
 1 1 1 1 1 
 
-
 1 1 1 1 1 
 1 1 1 1 1 
 1 1 1 1 1 
 1 1 1 1 1 
 1 1 1 1 1 
 
-
 1 1 1 1 1 
 1 1 1 1 1 
 1 1 1 1 1 
 1 1 1 1 1 
 1 1 1 1 1 
-
 
 1 1 1 1 1 
 1 1 1 1 1 
 1 1 1 1 1 
 1 1 1 1 1 
 1 1 1 1 0 
-
 
 1 1 1 1 1 
 1 1 1 1 1 
 1 1 1 1 1 
 1 1 1 1 0 
 1 1 1 0 1 
-
-
 
 ...to: 
 
@@ -199,33 +169,27 @@ INVALID solution. Maze has been altered from:
 1 1 1 1 1 
 1 1 1 1 1 
 
-
 1 1 1 1 1 
 1 1 1 1 1 
 1 1 1 1 1 
 1 1 1 1 1 
 1 1 1 1 1 
 
-
 1 1 1 1 1 
 1 1 1 1 1 
 1 1 1 1 1 
 1 1 1 1 1 
 1 1 1 1 1 
-
 
 1 1 1 1 1 
 1 1 1 1 1 
 1 1 1 1 1 
 1 1 1 1 1 
 1 1 1 1 0 
-
 
 1 1 1 1 1 
 1 1 1 1 1 
 1 1 1 1 1 
 1 1 1 1 0 
 1 1 1 0 1 
-
-
 
