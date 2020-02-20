@@ -88,6 +88,16 @@ bool Pathfinder::importMaze(string file_name) {
 	if (maze[0][0][0] == 0 || maze[4][4][4] == 0) {
 		return false;
 	}
+	/*test case
+	for (int i = 0; i < 5; i ++) {
+		for (int j = 0; j < 5; j++) {
+			for (int k = 0; k < 5; k++) {
+				cout << maze[i][j][k];
+			}
+			cout << endl;
+		}
+	}
+	*/
 	return true;
 }
 
