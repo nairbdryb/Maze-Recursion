@@ -75,8 +75,47 @@ bool Pathfinder::importMaze(string file_name) {
 }
 
 //Part 3
-
-vector<string> Pathfinder::solveMaze() {
-	vector<string> solution;
-	return solution;
+bool Pathfinder::findPath(int x, int y, int z) {
+	path.push_back("(x,y,z)");
+	if ( x < 0 || y < 0 || z < 0 || x > 4 || y > 4 || z > 4) {
+		path.pop_back();
+		return false;
+	}
+	else if (maze[x][y][z] == 0 || maze[x][y][z] == 2) {
+		path.pop_back();
+		return false;
+	}
+	else if (x == 4 || y == 4 || z == 4) {
+		return true;
+	}
+	//recursive thingy
+	maze[x][y][z] = 2;
+	if (findPath(x, y, (z + 1))) {
+		return true;
+	}
+	else if (findPath(x, y, (z - 1))) {
+		return true;
+	}
+	else if (findPath(x, (y + 1), z)) {
+		return true;
+	}
+	else if (findPath(x, (y - 1), z)) {
+		return true;
+	}
+	else if (findPath((x + 1), y, z)) {
+		return true;
+	}
+	else if (findPath((x - 1), y, z)) {
+		return true;
+	}
+	else {
+		path.pop_back();
+		return false;
+	}
 }
+vector<string> Pathfinder::solveMaze() {
+	findPath(0, 0, 0);
+
+	return path;
+}
+

@@ -83,8 +83,11 @@ public:
 	*				A solution to the current maze, or an empty vector if none exists
 	*/
 	vector<string> solveMaze();
+	bool findPath(int x, int y, int z);
 	//-----------------------------------------------------------------------------------------
 private:
+	
+	vector<string> path;
 	int maze[ARRAY_X][ARRAY_Y][ARRAY_Z] = {{{9, 1, 5, 1, 1}, {1, 1, 1, 1, 1}, {1, 1, 1, 1, 1}, {1, 1, 1, 1, 1}, {1, 1, 1, 1, 1}},
                                     {{1, 1, 1, 1, 1}, {1, 1, 1, 1, 1}, {1, 7, 1, 1, 1}, {1, 1, 1, 1, 1}, {1, 1, 1, 1, 1}},
                                     {{1, 1, 1, 1, 1}, {1, 1, 1, 1, 1}, {1, 1, 1, 1, 1}, {1, 1, 1, 1, 1}, {1, 1, 1, 1, 9}},
