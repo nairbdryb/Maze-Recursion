@@ -65,7 +65,7 @@ void Pathfinder::createRandomMaze() {
 bool Pathfinder::importMaze(string file_name) {
 	ifstream fileIn;
 	//ofstream fileOut;
-	int temp = 0;
+	int temp = 2;
 
 	fileIn.open(file_name);
 
