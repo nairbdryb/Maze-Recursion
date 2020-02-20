@@ -20,9 +20,9 @@ string Pathfinder::toString() const {
     //        cout << endl << endl;
     //    }
 
-        for (int i = 0; i < ArrayZ; i++){
-            for (int j = 0; j < ArrayY; j++){
-                for (int k = 0; k < ArrayX; k++){
+        for (int i = 0; i < ARRAY_Z; i++){
+            for (int j = 0; j < ARRAY_Y; j++){
+                for (int k = 0; k < ARRAY_X; k++){
                     int value = maze[k][j][i];
                     endString += value;
                 }
@@ -60,8 +60,13 @@ bool Pathfinder::importMaze(string file_name) {
 
 	fileOut.open(file_name);
 
-	if (!fileIn);
+	if (!fileIn) {
 		return false;
+	}
+
+	if (maze[0][0][0] == 0 || maze[4][4][4] == 0) {
+		return false;
+	}
 
 	for (int z = 0; z < 5; z++) {
 		for (int y = 0; y < 5; y++) {
