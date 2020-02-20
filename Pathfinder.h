@@ -2,11 +2,13 @@
 #include <fstream>
 #include <vector>
 #include <array>
+#include <stdlib.h>
+#include <time.h>
 
 class Pathfinder : public PathfinderInterface {//i just copied what was in "PathfinderInterface.h" and removed "virtual"
 public:
-	~Pathfinder();
-
+	//~Pathfinder();
+	//Pathfinder();
 	//Part 1-----------------------------------------------------------------------------------
 	/*
 	* toString
@@ -27,7 +29,7 @@ public:
 	* Returns:		string
 	*				A single string representing the current maze
 	*/
-	string toString();
+	string toString() const;
 
 	/*
 	* createRandomMaze
@@ -81,5 +83,6 @@ public:
 	//-----------------------------------------------------------------------------------------
 private:
 	int maze[5][5][5];
+	int randomMaze[5][5][5];
 	//vector<vector<vector<string>>> maze;
 }; 
