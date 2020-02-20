@@ -52,7 +52,7 @@ void Pathfinder::createRandomMaze() {
 		for (int y = 0; y < 5; y++) {
 			for (int x = 0; x < 5; x++) {
 				temp = rand() % 2;
-				maze[x][y][z] = temp;
+				maze[z][y][x] = temp;
 			}
 		}
 	}
@@ -67,38 +67,46 @@ bool Pathfinder::importMaze(string file_name) {
 	//ofstream fileOut;
 	int temp = 2;
 
-	fileIn.open(file_name);
+    fileIn.open(file_name);
 
-	if (!fileIn) {
-		return false;
-	}
+    if (!fileIn) {
+        return false;
+    }
 
-	for (int z = 0; z < 5; z++) {
-		for (int y = 0; y < 5; y++) {
-			for (int x = 0; x < 5; x++) {
-				if (fileIn.eof() == true) {
-					return false;
-				}
-				fileIn >> temp;
-				maze[x][y][z] = temp;
-			}
-		}
-	}
 
-	if (maze[0][0][0] == 0 || maze[4][4][4] == 0) {
-		return false;
-	}
-	/*test case
-	for (int i = 0; i < 5; i ++) {
-		for (int j = 0; j < 5; j++) {
-			for (int k = 0; k < 5; k++) {
-				cout << maze[i][j][k];
-			}
-			cout << endl;
-		}
-	}
-	*/
-	return true;
+    for (int z = 0; z < 5; z++) {
+        for (int y = 0; y < 5; y++) {
+            for (int x = 0; x < 5; x++) {
+                if (fileIn.eof() == true) {
+                    return false;
+                }
+                fileIn >> temp;
+                if (temp == 1 || temp == 0) {
+                    maze[z][y][x] = temp;
+                }else {
+                    return false;
+                }
+            }
+        }
+    }
+    if(!fileIn.eof()){
+        return false;
+    }
+
+    if (maze[0][0][0] == 0 || maze[4][4][4] == 0) {
+        return false;
+    }
+    /*test case
+    for (int i = 0; i < 5; i ++) {
+        for (int j = 0; j < 5; j++) {
+            for (int k = 0; k < 5; k++) {
+                cout << maze[i][j][k];
+            }
+            cout << endl;
+        }
+    }
+    */
+    return true;
 }
 
 //Part 3
