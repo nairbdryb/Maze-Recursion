@@ -4,6 +4,9 @@
 #include <array>
 #include <stdlib.h>
 #include <time.h>
+const int ARRAY_X = 5;
+const int ARRAY_Y = 5;
+const int ARRAY_Z = 5;
 
 class Pathfinder : public PathfinderInterface {//i just copied what was in "PathfinderInterface.h" and removed "virtual"
 public:
@@ -82,11 +85,11 @@ public:
 	vector<string> solveMaze();
 	//-----------------------------------------------------------------------------------------
 private:
-	int maze[5][2][5] = {{{9, 1, 5, 1, 1}, {1, 1, 1, 1, 1}, {1, 1, 1, 1, 1}, {1, 1, 1, 1, 1}, {1, 1, 1, 1, 1}},
+	int maze[ARRAY_X][ARRAY_Y][ARRAY_Z] = {{{9, 1, 5, 1, 1}, {1, 1, 1, 1, 1}, {1, 1, 1, 1, 1}, {1, 1, 1, 1, 1}, {1, 1, 1, 1, 1}},
                                     {{1, 1, 1, 1, 1}, {1, 1, 1, 1, 1}, {1, 7, 1, 1, 1}, {1, 1, 1, 1, 1}, {1, 1, 1, 1, 1}},
                                     {{1, 1, 1, 1, 1}, {1, 1, 1, 1, 1}, {1, 1, 1, 1, 1}, {1, 1, 1, 1, 1}, {1, 1, 1, 1, 9}},
                                     {{1, 1, 1, 1, 1}, {1, 1, 1, 1, 1}, {1, 1, 1, 1, 1}, {1, 1, 1, 1, 1}, {1, 1, 1, 1, 1}},
                                     {{1, 1, 1, 1, 1}, {1, 1, 1, 1, 1}, {1, 1, 1, 1, 1}, {1, 1, 1, 1, 1}, {1, 1, 1, 1, 1}}};
-	int randomMaze[5][5][5];
+	int randomMaze[ARRAY_X][ARRAY_Y][ARRAY_Z];
 	//vector<vector<vector<string>>> maze;
 }; 
