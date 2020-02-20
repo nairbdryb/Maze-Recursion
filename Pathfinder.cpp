@@ -8,7 +8,7 @@
 
 
 string Pathfinder::toString() const {
-        string endString = "";
+        stringstream endString;
 
     //    for (int i = 0; i < ArrayZ; i++){
     //        for (int j = 0; j < ArrayY; j++){
@@ -23,16 +23,18 @@ string Pathfinder::toString() const {
         for (int i = 0; i < ARRAY_Z; i++){
             for (int j = 0; j < ARRAY_Y; j++){
                 for (int k = 0; k < ARRAY_X; k++){
-                    int value = maze[k][j][i];
-                    endString += value;
+                    int value = maze[i][j][k];
+                    endString << value;
                 }
-                endString.push_back('\n');
+                endString << '\n';
             }
-            endString.push_back('\n');
-            endString.push_back('\n');
+            endString << '\n';
+            endString << '\n';
         }
     //    cout << endString;
-        return endString;
+		string temp = "";
+		endString >> temp;
+        return temp;
 }
 
 void Pathfinder::createRandomMaze() {
@@ -73,6 +75,9 @@ bool Pathfinder::importMaze(string file_name) {
 			for (int x = 0; x < 5; x++) {
 				fileIn >> temp;
 				maze[x][y][z] = temp;
+				if (fileIn.eof() == true) {
+					return false;
+				}
 			}
 		}
 	}

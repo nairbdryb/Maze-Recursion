@@ -4,6 +4,7 @@
 #include <array>
 #include <stdlib.h>
 #include <time.h>
+#include <sstream>
 const int ARRAY_X = 5;
 const int ARRAY_Y = 5;
 const int ARRAY_Z = 5;
