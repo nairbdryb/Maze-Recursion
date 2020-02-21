@@ -111,7 +111,9 @@ bool Pathfinder::importMaze(string file_name) {
 
 //Part 3
 bool Pathfinder::findPath(int x, int y, int z) {
-	path.push_back("(x,y,z)");
+	stringstream ss;
+	ss << "(" << x << ", " << y << ", " << z << ")";
+	path.push_back(ss.str());
 	if ( x < 0 || y < 0 || z < 0 || x > 4 || y > 4 || z > 4) {
 		path.pop_back();
 		return false;
