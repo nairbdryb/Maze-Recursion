@@ -114,17 +114,18 @@ bool Pathfinder::findPath(int x, int y, int z) {
 	stringstream ss;
 	ss << "(" << x << ", " << y << ", " << z << ")";
 	path.push_back(ss.str());
+	if (x == 4 && y == 4 && z == 4) {
+		return true;
+	}
 	if ( x < 0 || y < 0 || z < 0 || x > 4 || y > 4 || z > 4) {
 		path.pop_back();
 		return false;
 	}
-	else if (maze[x][y][z] == 0 || maze[x][y][z] == 2) {
+	if (maze[x][y][z] == 0 || maze[x][y][z] == 2) {
 		path.pop_back();
 		return false;
 	}
-	else if (x == 4 || y == 4 || z == 4) {
-		return true;
-	}
+
 	//recursive thingy
 	maze[x][y][z] = 2;
 	if (findPath(x, y, (z + 1))) {
@@ -136,12 +137,16 @@ bool Pathfinder::findPath(int x, int y, int z) {
 	else if (findPath(x, (y + 1), z)) {
 		return true;
 	}
-	else if (findPath(x, (y - 1), z)) {
-		return true;
-	}
 	else if (findPath((x + 1), y, z)) {
 		return true;
 	}
+	else if (findPath(x, y, (z - 1))) {
+		return true;
+	}
+	else if (findPath(x, (y - 1), z)) {
+		return true;
+	}
+	
 	else if (findPath((x - 1), y, z)) {
 		return true;
 	}
