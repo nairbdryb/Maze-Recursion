@@ -152,7 +152,19 @@ bool Pathfinder::findPath(int x, int y, int z) {
 }
 vector<string> Pathfinder::solveMaze() {
 	findPath(0, 0, 0);
-
+	
+	for (int z = 0; z < 5; z++) {
+		for (int y = 0; y < 5; y++) {
+			for (int x = 0; x < 5; x++) {
+				if (maze[x][y][z] == 2) {
+					maze[x][y][z] = 1;
+				}
+				else {
+					//No I don't
+				}
+			}
+		}
+	}
 	return path;
 }
 
