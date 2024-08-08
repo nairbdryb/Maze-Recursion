@@ -11,16 +11,6 @@ string Pathfinder::toString() const {
         stringstream endString;
 		string finalStringForRealsies = "";
 
-    //    for (int i = 0; i < ArrayZ; i++){
-    //        for (int j = 0; j < ArrayY; j++){
-    //            for (int k = 0; k < ArrayX; k++){
-    //                cout << maze[k][j][i];
-    //            }
-    //            cout << endl;
-    //        }
-    //        cout << endl << endl;
-    //    }
-
         for (int i = 0; i < ARRAY_Z; i++){
             for (int j = 0; j < ARRAY_Y; j++){
                 for (int k = 0; k < ARRAY_X; k++){
@@ -33,13 +23,7 @@ string Pathfinder::toString() const {
 			if (i != ARRAY_Z - 1) {
 				endString << '\n';
 			}
-//            endString << '\n';
         }
-    //    cout << endString;
-//		string temp = "";
-//		endString >> temp;
-//		endString.str().erase(endString.str().end());
-//		endString.unget();
 
         return endString.str();
 }
@@ -64,7 +48,6 @@ void Pathfinder::createRandomMaze() {
 
 bool Pathfinder::importMaze(string file_name) {
 	ifstream fileIn;
-	//ofstream fileOut;
 	int temp = 2;
 
     fileIn.open(file_name);
@@ -96,16 +79,6 @@ bool Pathfinder::importMaze(string file_name) {
     if (maze[0][0][0] == 0 || maze[4][4][4] == 0) {
         return false;
     }
-    /*test case
-    for (int i = 0; i < 5; i ++) {
-        for (int j = 0; j < 5; j++) {
-            for (int k = 0; k < 5; k++) {
-                cout << maze[i][j][k];
-            }
-            cout << endl;
-        }
-    }
-    */
     return true;
 }
 
@@ -163,9 +136,6 @@ vector<string> Pathfinder::solveMaze() {
 			for (int x = 0; x < 5; x++) {
 				if (maze[x][y][z] == 2) {
 					maze[x][y][z] = 1;
-				}
-				else {
-					//No I don't
 				}
 			}
 		}
